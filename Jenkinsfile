@@ -15,7 +15,7 @@ pipeline {
         stage('Deploy') {
             steps {
                 echo 'Deploying....'
-                sh 'cp index.html /var/www/html'
+                sudo sh 'cp index.html /var/www/html'
             }
         }
     }
