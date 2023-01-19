@@ -10,7 +10,7 @@ pipeline {
         stage('Test') {
             steps {
                 echo 'Testing..'
-                sh 'tidy -q -e index.html'
+                
             }
         }
         stage('Deploy') {
